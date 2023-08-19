@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Lexend+Deca&family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ## Colors */
+
+  /* ### Primary */
+
+  --Pale-blue: rgb(224, 232, 255);
+  --Bright-blue: rgb(48, 32, 223);
+
+  /* ### Neutral */
+
+  --Very-pale-blue: rgb(245, 247, 255);
+  --Desaturated-blue: rgb(114, 128, 167);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+.picture {
+  position: relative;
+  width: 100%;
+  top: -103px;
+  z-index: 0;
+}
+body {
+  font-family: "Red Hat Display";
+
+  /* background: url(images/pattern-background-mobile.svg) no-repeat center right; */
+  background-color: var(--Pale-blue);
+  height: calc(100vh - 1px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position:relative;
+  margin-top: -303px;
+  z-index: 10;
+}
+.pic {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  
+}
+
+.info {
+  background-color: white;
+  width:450px;
+  height:400px;
+  
+}
+.info-hading {
+  text-align: center;
+  font-size: 25px;
+  font-family: "Red Hat Display";
+  margin-top:17px;
+  font-weight: 700;
+}
+
+p{
+  width: 294px;
+  margin-left: 81px;
+  margin-top: 20px;
+  color:var(--Desaturated-blue);
+}
+p > span{
+  text-align: center;
+  margin-left: 70px;
+}
+.music{
+  display: flex;
+height: 96px;
+width: 349px;
+background-color: var(--Very-pale-blue);
+margin-left: 41px;
+margin-top: 17px;
+justify-content: center;
+align-items: center;
+border-radius: 8px;
+}
+
+.subscription{
+  display: flex;
+  flex-direction: column;
+  margin-left: 14px;
+}
+.sub-heading{
+  font-size: 16px;
+font-family: "Red Hat Display"; 
+}
+.sub-2{
+  font-size:16px;
+  color:var(--Desaturated-blue);
+}
+.music > a{
+  margin-left:93px;
+  text-decoration: none;
+  color:blue;
+}
+.btn-1{
+  background-color:var(--Bright-blue);
+  width:349px;
+  height:20px;
+margin-top: 25px;
+margin-left: 41px;
+color:white;
+height: 40px;
+border-radius: 10px;
+font-size: 15px;
+font-weight: 600;
+font-family: "Red Hat Display" ;
+cursor: pointer;
+box-shadow:3px 4px 8px 2px rgb(48, 32, 223,0.4);;
+
+}
+.btn-1:hover{
+
+  box-shadow:none ;
+}
+.cancel{
+  text-align: center;
+  cursor: pointer;
+  font-weight: 900;
+  font-family: "Red Hat Display" ;
+  color:var(--Desaturated-blue);
+  display:inline-block;
+
+}
+.cancel:hover{
+  color:black;
+}
+.info{
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+/* mobiles */
+@media screen and (max-width:375px) {
+.container{
+
+  width: 100%;
+}
+
+.pic{
+    width: 344px;
+  height: 216px;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  margin-top:230px;
+}
+.info{
+  width:344px;
+}
+.info-hading{
+  font-size: 23px;
+  text-align: center;
+}
+.info > p{
+  font-size: 15px;
+  margin-left: 61px;
+  width:252px;
+  color:var(--Desaturated-blue);
+}
+.info p > span{
+  margin-left: 0;
+}
+
+.music {
+  display: flex;
+  height: 81px;
+  width: 274px;
+  background-color: var(--Very-pale-blue);
+  margin-left: 41px;
+  margin-top: 17px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.music-icon{
+/* ackground-size: cover; */
+  /* margin-left: 31px */
+  /* b; */
+
+}
+
+.subscription{
+  margin-left:17px;
+}
+.sub-heading {
+  font-size: 12px;
+  font-family: "Red Hat Display";
+
+}
+.sub-2{
+  font-size: 12px;
+}
+.music > a {
+    margin-left: 50px;
+    text-decoration: none;
+    color: blue;
+    font-size: 13px;
+}
+.btn-1 {
+    background-color: var(--Bright-blue);
+    width: 267px;
+    height: 20px;
+    margin-top: 25px;
+    margin-left: 41px;
+    color: white;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Red Hat Display";
+    cursor: pointer;
+
+
+
+
+}
+   .attribution { font-size: 13px; text-align: center;
+    margin-top:12px;}
+    .attribution a { color:blueviolet; }
+
+
+}
+  
+    .attribution { font-size: 13px; text-align: center;
+    margin-top:12px;}
+    .attribution a { color:blueviolet; }
+  
